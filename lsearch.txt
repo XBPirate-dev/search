@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main()
+{
+int a[50],i,n,search,f=0;
+printf("Enter the size of array limit:");
+scanf("%d",&n);
+
+for(i=0;i<n;i++)
+{   
+    printf("Enter the elements into array");
+  scanf("%d",&a[i]);
+}
+    printf("Enter the element to be searched");
+    scanf("%d",&search);
+        for(i=0;i<n;i++)
+        {
+            if(a[i]==search)
+            {
+                f=1;
+                break;
+            }
+        }
+
+if(f==1)
+{
+printf("Element is found at %d",i);
+}
+else{
+printf("element not found");
+}
+
+}
